@@ -1,0 +1,132 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+form label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  text-align: center;
+}
+
+form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+form button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#types {
+  min-height: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.type {
+  width: 66px;
+  padding: 5px;
+  font-size: 0.7rem;
+  text-align: center;
+  border-radius: 5px;
+  background-color: red;
+  text-transform: uppercase;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+.output {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-container,
+.bottom-container {
+  margin-bottom: 20px;
+}
+
+.name-and-id,
+.size,
+.sprite-container,
+#types {
+  margin-bottom: 10px;
+}
+
+#sprite {
+  width: 180px;
+}
+
+table {
+  width: 100%;
+  border: 5px;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+table th {
+  background-color: cyan;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  form input,
+  form button {
+    font-size: 0.9em;
+  }
+
+  table th,
+  table td {
+    padding: 6px;
+  }
+}
